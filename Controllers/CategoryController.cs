@@ -2,14 +2,14 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Backoffice.Data;
-using Backoffice.Models;
+using Shop.Data;
+using Shop.Models;
 using System;
 using Microsoft.AspNetCore.Authorization;
 
 namespace Shop.Controllers
 {
-    public class CategoryController
+    public class CategoryController : Controller
     {
         [HttpGet]
         [Route("")]
@@ -52,7 +52,6 @@ namespace Shop.Controllers
             catch (Exception)
             {
                 return BadRequest(new { message = "Não foi possível criar a categoria" });
-
             }
         }
 
@@ -81,7 +80,6 @@ namespace Shop.Controllers
             catch (DbUpdateConcurrencyException)
             {
                 return BadRequest(new { message = "Não foi possível atualizar a categoria" });
-
             }
         }
 
@@ -105,7 +103,6 @@ namespace Shop.Controllers
             catch (Exception)
             {
                 return BadRequest(new { message = "Não foi possível remover a categoria" });
-
             }
         }
     }

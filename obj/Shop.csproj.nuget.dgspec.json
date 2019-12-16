@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\aspnet_core\\Shop\\Shop.csproj": {}
+    "C:\\dev\\shop_aspnetcore\\Shop.csproj": {}
   },
   "projects": {
-    "D:\\dev\\aspnet_core\\Shop\\Shop.csproj": {
+    "C:\\dev\\shop_aspnetcore\\Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\aspnet_core\\Shop\\Shop.csproj",
+        "projectUniqueName": "C:\\dev\\shop_aspnetcore\\Shop.csproj",
         "projectName": "Shop",
-        "projectPath": "D:\\dev\\aspnet_core\\Shop\\Shop.csproj",
+        "projectPath": "C:\\dev\\shop_aspnetcore\\Shop.csproj",
         "packagesPath": "C:\\Users\\anahe\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\aspnet_core\\Shop\\obj\\",
+        "outputPath": "C:\\dev\\shop_aspnetcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,7 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/orthopride/_packaging/orthopride/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -40,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +64,8 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
-          }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

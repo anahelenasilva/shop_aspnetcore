@@ -1,7 +1,8 @@
+using Microsoft.AspNetCore.Mvc;
+
 namespace Shop.Controllers
 {
-    public class ProductController
+    public class ProductController : Controller
     {
-        
     }
 }
